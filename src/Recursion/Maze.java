@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Maze {
     public static void main(String[] args) {
-        int m = 2, n = 2;
+        int m = 4, n = 4;
         boolean vis[][] = new boolean[m][n];
         int[][] path = new int[m][n];
         allPath("", m, n, 0, 0, vis, path, 1);
