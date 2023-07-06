@@ -3,6 +3,9 @@ package DynamicProgramming;
 * Refer to the following GfG problem:
 * https://practice.geeksforgeeks.org/problems/minimum-sum-partition3317*/
 
+import java.util.ArrayList;
+import java.util.List;
+
 class MinimumSubsetSumDifference
 {
     public static void main(String[] args) {
@@ -10,7 +13,7 @@ class MinimumSubsetSumDifference
         int n = arr.length;
         System.out.println(minDifference(arr, n));
     }
-    public int minDifference(int arr[], int n)
+    public static int minDifference(int[] arr, int n)
     {
         // Your code goes here
         int maxSum = 0;
@@ -28,7 +31,7 @@ class MinimumSubsetSumDifference
     }
 
 
-    public void subsetSum(int[] arr, int n, int sum, List<Integer> list){
+    public static void subsetSum(int[] arr, int n, int sum, List<Integer> list){
         boolean[][] t = new boolean[n+1][sum+1];
 
         for(int i = 0 ; i <= n ; i++)
